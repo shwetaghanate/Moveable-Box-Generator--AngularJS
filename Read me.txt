@@ -1,0 +1,28 @@
+1.Make a project in Desktop name AngularProject->
+Create a new Angular project- npm install -g @angular/cli
+2. ng new ng-dashboard-builder
+3.select this 
+Would you like to add Angular routing? No
+Which stylesheet format would you like to use? SCSS [ http://sass-lang.com ]
+type below commands:
+
+4. Now, let’s change into the project directory and install our dependencies:
+cd ng-dashboard-builder
+npm i angular-gridster2 angular2-uuid --save
+5. npm start
+At this stage you can boot up Angular’s development server and preview your project by running ng serve and open your browser at http://localhost:4200.
+C:\Users\shwetaghanate\Desktop\Angular>cd my-angular-project
+
+C:\Users\shwetaghanate\Desktop\Angular\my-angular-project>ng serve --open
+^CTerminate batch job (Y/N)? y
+
+C:\Users\shwetaghanate\Desktop\Angular\my-angular-project>npm start
+
+http://localhost:4200/
+
+features Added:
+1. Add box in Container on Add click.
+2. On Item select added the alert for count increment.
+3.Checkbox added and deselection will disbale the arrow click.
+4. Added select color change in HTML and Angular , javascript.
+

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyAngularProject</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript">
+  function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+    text.innerHTML= "Arrow selection disbled.";
+    //arrow selection is disabled.
+  }
+}
+
+	var count = 0;
+function changeClass(x) {
+	
+	x.draggable = true;
+	x.style.background= "greenyellow";
+	count = count+1;
+	var me = x;
+	//alert("Item is selected!! "+ count);
+		document.addEventListener('keydown', function(event) {
+    const key = event.key; // const {key} = event; ES6+
+    if (key === "Delete") {
+    	    var child = me;
+          var parent = document.getElementById("content");
+          parent.removeChild(child);
+        // Do things
+       // debugger;
+        console.log(me);
+    }
+	});
+}
+  </script>
+</head>
+<body>
+	<input type="checkbox" class="checkmark" id="myCheck" onclick="myFunction()" name="">
+	<p id="text" style="display:none">Checkbox is CHECKED! </p>
+	<br>
+  <app-root>Loading</app-root>
+
+
+</body>
+</html>
